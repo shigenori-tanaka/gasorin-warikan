@@ -2,7 +2,7 @@
 <html lang="ja">
     <head>
         <meta charset="utf8">
-        <link rel="stylesheet" href="top_html.css">
+        <link rel="stylesheet" href="index.php.css">
         <title >ガソリン代割り勘計算</title>
     </head>
 
