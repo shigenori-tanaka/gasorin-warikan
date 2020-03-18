@@ -26,6 +26,7 @@
             </div>
             <div class="highway">
                 <h4 class="category">高速道路代金（円）</h4>
+                <a href="https://www.driveplaza.com/dp/SearchTop" target="_brank">高速道路代金検索はこちら（外部サイト）</a>
                 <input type="text" name="highway" value="0">
             </div>
             <div class="parking">
