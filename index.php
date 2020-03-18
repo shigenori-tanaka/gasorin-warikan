@@ -2,7 +2,7 @@
 <html lang="ja">
     <head>
         <meta charset="utf8">
-        <link rel="stylesheet" href="top_html.css">
+        <link rel="stylesheet" href="index.php.css">
         <title >ガソリン代割り勘計算</title>
     </head>
     <body>
@@ -12,11 +12,11 @@
         </div>
         <form class="form" action="top.php" method="GET">
             <div class="mileage">
-                <h4 class="category">走行距離（Km)</h4>
+                <h4 class="category">走行距離（Km）</h4>
                 <input type="text" name="mileage" required>
             </div>
             <div class="gasoline_mileage">
-                <h4 class="category">車の1リットルあたりの燃費（Km)</h4>
+                <h4 class="category">車の1リットルあたりの燃費（Km）</h4>
                 <a href="https://e-nenpi.com/enenpi/" target="_brank">実燃費一覧はこちら（外部サイト）</a>
                 <input type="text" name="gasoline_mileage" required>
             </div>
