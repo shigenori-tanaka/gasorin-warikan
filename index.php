@@ -6,6 +6,7 @@
         <title >ガソリン代割り勘計算</title>
     </head>
     <body>
+        <p>test</p>
         <header>ガソリン代 交通費 割り勘計算します！</header>
         <div class="use_it">
             <a href="use.html">使い方はこちら</a>
