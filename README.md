@@ -28,3 +28,11 @@ heroku => https://gasorin-warikan.herokuapp.com/
 （走行距離 ÷ 車の1リットルあたりの値段 × 1リットルあたりのガソリン価格 ＋ 高速代金 ＋ 駐車場代金 ＋ レンタカー代金） ÷ 割り勘する人数
 
 合計金額の小数点は切り捨てです。
+
+### git clone
+
+```
+$ https://github.com/shigenori-tanaka/gasorin-warikan.git
+$ localhost:8000
+```
+
