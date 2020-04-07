@@ -1,10 +1,6 @@
 # ガソリン代、交通費、割り勘計算します
 日常、レジャーでの移動時にかかるガソリン代及び高速道路代、駐車場代、レンタカー代金を割り勘計算します。
 
-heroku => https://gasorin-warikan.herokuapp.com/
-
-
-
 ## 使い方
 各項目欄に情報を入力してください。その際に、単位の入力はしないでください。
 
@@ -29,10 +25,17 @@ heroku => https://gasorin-warikan.herokuapp.com/
 
 合計金額の小数点は切り捨てです。
 
-### git clone
+## 開発環境
+- macOS
+- PHP7.3
+
+## セットアップ
 
 ```
-$ https://github.com/shigenori-tanaka/gasorin-warikan.git
+$ git clone https://github.com/shigenori-tanaka/gasorin-warikan.git
 $ php -S localhost:8000
 ```
+
+## Heroku
+https://gasorin-warikan.herokuapp.com/
 
