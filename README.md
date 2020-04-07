@@ -33,6 +33,6 @@ heroku => https://gasorin-warikan.herokuapp.com/
 
 ```
 $ https://github.com/shigenori-tanaka/gasorin-warikan.git
-$ localhost:8000
+$ php -S localhost:8000
 ```
 
