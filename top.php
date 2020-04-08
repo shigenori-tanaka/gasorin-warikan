@@ -1,3 +1,5 @@
+<?php require_once('Calculation.php') ?>
+
 <!DOCTYPE html>
 <html lang="ja">
     <head>
@@ -47,9 +49,13 @@
             <p class="result"> <?php echo "{$man}人"; ?>
             
             <h4>合計（円）</h4>
-            <?php $total = ($mileage/$gasoline_mileage*$gasoline+$highway+$parking+$rent_a_car)/$man; ?>
+            <?php     $calculation->Add($mileage, $gasoline_mileage, $gasoline, $highway, $parking, $rent_a_car, $man);
+ ?>
             <p class="result"> <?php echo floor($total)."円"; ?>
+
+            <a href="index.php">戻る</a>
         </div>
+            
 
     </body>
 </html>
