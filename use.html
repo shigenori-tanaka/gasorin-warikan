@@ -2,37 +2,33 @@
 <html lang="ja">
     <head>
         <meta charset="utf8">
-        <link rel="stylesheet" href="use.html.css">
-        <title >ガソリン代割り勘計算</title>
+        <title>enjoy Drive!!</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="stylesheet.css">
     </head>
     <body>
-        <header>使い方</header>
-        <div class="form">
-        <p class="use_p">各項目欄に情報を入力してください。その際に、単位の入力はしないでください。</p>
-        <p class="use_p">入力例</p>
-        <p class="use_p">走行距離</p>
-        <p class="use_p"> <span class="NG">NG 100Km</span> → <span class="OK">OK 100</span></p>
-        <p class="use_p">ガソリン価格</p>
-        <p class="use_p"> <span class="NG">NG 140円</span> → <span class="OK">OK 140</span></p>
-        
-        <h4>入力必須項目</h4>
-        <h5>以下の項目は必ず入力してください</h5>
-        <ul>
-            <li>走行距離</li>
-            <li>車の1リットルあたりの燃費</li>
-            <li>1リットルあたりのガソリン価格</li>
-            <li>割り勘する人数</li>
-
-        </ul>
-        <p class="use_p">※高速代金、駐車場代金、レンタカー代金の入力は必要に応じて入力してください。</p>
-        
-        <h4>ガソリン代、交通費の計算式</h4>
-        <p class="use_p">計算式は以下の通りです。<br>
-            （走行距離 ÷ 車の1リットルあたりの値段 × 1リットルあたりのガソリン価格 ＋ 高速代金 ＋ 駐車場代金 ＋ レンタカー代金） ÷ 割り勘する人数</p>
-        <p class="use_p">合計金額の小数点以下は切り捨てです。</p>
-
-        
-        <p class="sent"><a href="top.html">計算画面に戻る</a></p>
-        </div>
+        <nav class="navbar navbar-light p-0" style="background-color:aquamarine;">
+            <div class="container">
+                <h5 id="title">使い方</h5>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="col-sm-12">
+                <p>各項目に情報を入力し、計算するボタンを押してください。</p>
+                <p>※入力必須項目（オプション項目には最初から0が入っていますが、必要に応じて入力してください）</p>
+                <ul>
+                    <li>走行距離</li>
+                    <li>車の1リットルあたりの燃費</li>
+                    <li>1リットルあたりのガソリン価格</li>
+                    <li>割り勘する人数</li>
+                </ul>
+            </div>
+            <div class="col-sm-12">
+                <h5 style="font-weight: bold; padding-top:20px;">ガソリン代、交通費の計算式</h5>
+                <p>走行距離 ÷ 車の1リットルあたりの値段 × 1リットルあたりのガソリン価格 ＋ 高速代金 ＋ 駐車場代金 ＋ レンタカー代金） ÷ 割り勘する人数</p>
+                <p>合計金額の小数点以下は切り捨てています。</p>
+            </div>
+            <p><a href="index.php">計算画面に戻る</a></p>
+        </div>        
     </body>
 </html>

@@ -4,58 +4,92 @@
 <html lang="ja">
     <head>
         <meta charset="utf8">
-        <link rel="stylesheet" href="index.php.css">
-        <title >ガソリン代割り勘計算</title>
+        <title>peace</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="stylesheet.css">
     </head>
-
     <body>
-        <header>計算結果</header>
-        <div class="form">
-            <h4>走行距離（Km）</h4>
-            <?php $mileage = $_GET['mileage']; ?>
-            <p class="result"> <?php echo "{$mileage}Km"; ?> </p>
-            
-            <h4>車の1リットルあたりの走行距離（Km）</h4>
-            <?php $gasoline_mileage = $_GET['gasoline_mileage']; ?>
-            <p class="result"> <?php echo "{$gasoline_mileage}Km"; ?> </p>
-            
-            <h4>1リットルのガソリン代（円）</h4>
-            <?php $gasoline = $_GET['gasoline']; ?>
-            <p class="result"> <?php echo "{$gasoline}円";?> </p>
-            
-            <!-- 高速代表示 -->
-            <?php $highway = $_GET['highway']; ?>
+        <nav class="navbar navbar-light p-0" style="background-color:aquamarine;">
+            <div class="container">
+                <h5 id="title">計算結果</h5>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                    <h6>走行距離（Km）</h6>
+                </div>
+                <div class="col-sm-5">
+                    <?php $mileage = $_GET['mileage']; echo "{$mileage} Km"; ?>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-5">
+                    <h6>車の1リットルあたりの走行距離</h6>
+                </div>
+                <div class="col-sm-5">
+                    <?php $gasoline_mileage = $_GET['gasoline_mileage']; echo "{$gasoline_mileage} Km"; ?>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-5">
+                    <h6>1リットルのガソリン代</h6>
+                </div>
+                <div class="col-sm-5">
+                    <?php $gasoline = $_GET['gasoline']; echo "{$gasoline} 円"; ?>
+                </div>
+            </div>
             <?php if($highway != 0): ?>
-                <h4> <?php echo "高速代金"; ?> </h4>
-                <p class="result"> <?php echo "{$highway}円" ?> </p>
+                <div class="row">
+                    <?php $highway = $_GET['highway']; ?>
+                    <div class="col-sm-5">
+                        <h6>高速代金</h6>
+                    </div>
+                    <div class="col-sm-5">
+                        <?php $highway = $_GET['highway']; echo "{$highway} 円"; ?>
+                    </div>
+                </div>
             <?php endif ?>
-            
-            <!-- 駐車場代表示 -->
-            <?php $parking = $_GET['parking']; ?>
+
             <?php if($parking != 0): ?>
-                <h4> <?php echo "駐車場代金"; ?> </h4>
-                <p class="result"> <?php echo "{$parking}円"; ?> </p>
+                <div class="row">
+                    <?php $parking = $_GET['parking']; ?>
+                    <div class="col-sm-5">
+                        <h6>駐車場代金</h6>
+                    </div>
+                    <div class="col-sm-5">
+                        <?php $parking = $_GET['parking']; echo "{$parking} 円"; ?>
+                    </div>
+                </div>
             <?php endif ?>
-            
-            <!-- レンタカー代表示 -->
-            <?php $rent_a_car = $_GET['rent_a_car']; ?>
+
             <?php if($rent_a_car != 0): ?>
-                <h4> <?php echo "レンタカー代金"; ?> </h4>
-                <p class="result"> <?php echo "{$rent_a_car}円"; ?> </p>
+                <div class="row">
+                    <?php $rent_a_car = $_GET['rent_a_car']; ?>
+                    <div class="col-sm-5">
+                        <h6>レンタカー代金</h6>
+                    </div>
+                    <div class="col-sm-5">
+                        <?php $rent_a_car = $_GET['rent_a_car']; echo "{$rent_a_car} 円"; ?>
+                    </div>
+                </div>
             <?php endif ?>
-                
-            <h4>割り勘する人数</h4>
-            <?php $man = $_GET['man']; ?>
-            <p class="result"> <?php echo "{$man}人"; ?>
-            
-            <h4>合計（円）</h4>
-            <?php     $calculation->Add($mileage, $gasoline_mileage, $gasoline, $highway, $parking, $rent_a_car, $man);
- ?>
-            <p class="result"> <?php echo floor($total)."円"; ?>
-
-            <a href="index.php">戻る</a>
-        </div>
-            
-
+            <div class="row">
+                <div class="col-sm-5">
+                    <h6>割り勘人数</h6>
+                </div>
+                <div class="col-sm-5">
+                    <?php $man = $_GET['man']; echo "{$man} 人"; ?>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-5">
+                    <h4 class="total">合計</h4>
+                </div>
+                <div class="col-sm-5">
+                    <h4 class="total2"><?php echo $calculation->Add($mileage, $gasoline_mileage, $gasoline, $highway, $parking, $rent_a_car, $man)." 円"; ?></h4>
+                </div>
+            </div>
+            <a href="index2.php">戻る</a>
     </body>
 </html>
