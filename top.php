@@ -17,7 +17,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-5">
-                    <h6>走行距離（Km）</h6>
+                    <h6>走行距離</h6>
                 </div>
                 <div class="col-sm-5">
                     <?php $mileage = $_GET['mileage']; echo "{$mileage} Km"; ?>
@@ -25,7 +25,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-5">
-                    <h6>車の1リットルあたりの走行距離</h6>
+                    <h6>車の1リットルあたりの燃費</h6>
                 </div>
                 <div class="col-sm-5">
                     <?php $gasoline_mileage = $_GET['gasoline_mileage']; echo "{$gasoline_mileage} Km"; ?>
@@ -43,7 +43,7 @@
                 <div class="row">
                     <?php $highway = $_GET['highway']; ?>
                     <div class="col-sm-5">
-                        <h6>高速代金</h6>
+                        <h6>高速道路代金</h6>
                     </div>
                     <div class="col-sm-5">
                         <?php $highway = $_GET['highway']; echo "{$highway} 円"; ?>

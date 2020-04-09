@@ -20,7 +20,7 @@
             <form action="top.php" method="GET">
                 <div class="row">
                     <div class="col-sm-5">
-                        <h6>走行距離（Km）</h6>
+                        <h6>走行距離</h6>
                     </div>
                     <div class="col-sm-5">
                         <input type="text" name="mileage" required>
@@ -29,7 +29,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-5">
-                        <h6>車の1リットルあたりの燃費（Km）</h6>
+                        <h6>車の1リットルあたりの燃費</h6>
                         <p><a href="https://e-nenpi.com/enenpi/" target="_brank">実燃費一覧はこちら（外部サイト）</a></p>
                     </div>
                     <div class="col-sm-5">
@@ -39,7 +39,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-5">
-                        <h6>1リットルあたりのガソリン価格（円）</h6>
+                        <h6>1リットルあたりのガソリン価格</h6>
                     </div>
                     <div class="col-sm-5">
                         <input type="text" name="gasoline" required>
@@ -61,7 +61,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-5">
-                        <h6>高速道路代金（円）</h6>
+                        <h6>高速道路代金</h6>
                         <p><a href="https://www.driveplaza.com/dp/SearchTop" target="_brank">高速道路代金検索はこちら（外部サイト）</a></p>
                     </div>
                     <div class="col-sm-5">
@@ -71,7 +71,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-5">
-                        <h6>駐車場代金（円</h6>
+                        <h6>駐車場代金</h6>
                     </div>
                     <div class="col-sm-5">
                         <input type="text" name="parking" style="text-align: right;" value="0">
@@ -80,7 +80,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-5">
-                        <h6>レンタカー代金（円）</h6>
+                        <h6>レンタカー代金</h6>
                     </div>
                     <div class="col-sm-5">
                         <input type="text" name="rent_a_car" style="text-align: right;" value="0">
