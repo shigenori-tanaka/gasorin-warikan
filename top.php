@@ -1,4 +1,4 @@
-<?php require_once('Calculation.php') ?>
+<?php require_once('calculation.php') ?>
 
 <!DOCTYPE html>
 <html lang="ja">
