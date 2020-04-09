@@ -26,6 +26,15 @@
 $ git clone https://github.com/shigenori-tanaka/gasorin-warikan.git
 $ php -S localhost:8000
 ```
+他に、Herokumを寝かさないために設定時間ごとにサイトを訪れるUptimeRobotというWebサービスを設定しています。
+
+
+https://uptimerobot.com/login?rt=https://uptimerobot.com/dashboard#mainDashboard
+
+使い方はこちらを参考にさせていただきました。
+
+https://casualdevelopers.com/tech-tips/how-to-prevent-idling-of-free-dyno-on-heroku/
+
 
 ## Heroku
 https://gasorin-warikan.herokuapp.com/
