@@ -1,0 +1,38 @@
+#title{
+    padding-top: 5px;
+
+}
+
+#title-id{
+    font-size: 30px;
+    color: red;
+}
+
+.overview{
+    padding: 20px 0;
+}
+
+.row{
+    padding: 10px 0;
+    /* border-bottom: 1px solid ; */
+}
+
+#option{
+    margin-top: 30px;
+    border-bottom: 1px solid gray;
+
+}
+
+.btn{
+    margin-top: 30px;
+    margin-left:15px
+}
+
+.total{
+    padding-top:10px;
+    border-top: 1px solid gray;
+}
+
+.total2{
+    padding-top:10px;
+}
