@@ -90,6 +90,6 @@
                     <h4 class="total2"><?php echo $calculation->Add($mileage, $gasoline_mileage, $gasoline, $highway, $parking, $rent_a_car, $man)." 円"; ?></h4>
                 </div>
             </div>
-            <a href="index2.php">戻る</a>
+            <a href="index.php">戻る</a>
     </body>
 </html>
