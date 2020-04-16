@@ -85,7 +85,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-5">
-                    <h4 class="total">合計</h4>
+                    <h4 class="total">一人当たりの支払額</h4>
                 </div>
                 <div class="col-sm-5">
                     <h4 class="total2"><?php echo $calculation->Add($mileage, $gasoline_mileage, $gasoline, $highway, $parking, $rent_a_car, $man)." 円"; ?></h4>
