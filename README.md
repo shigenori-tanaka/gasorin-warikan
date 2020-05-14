@@ -27,6 +27,7 @@ $ git clone https://github.com/shigenori-tanaka/gasorin-warikan.git
 $ php -S localhost:8000
 ```
 localhostを起動したあとこちらからご確認ください。
+
 http://localhost:8000/gasorin-warikan/index.php
 
 他に、Herokumを寝かさないために設定時間ごとに自動でサイトを訪れるUptimeRobotというWebサービスを設定しています。
