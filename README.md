@@ -12,7 +12,7 @@
 ## ガソリン代、交通費の計算式
 計算式は以下の通りです。
 
-（走行距離 ÷ 車の1リットルあたりの値段 × 1リットルあたりのガソリン価格 ＋ 高速代金 ＋ 駐車場代金 ＋ レンタカー代金） ÷ 割り勘する人数
+（走行距離 ÷ 車の1リットルあたりの燃費 × 1リットルあたりのガソリン価格 ＋ 高速代金 ＋ 駐車場代金 ＋ レンタカー代金） ÷ 割り勘する人数
 
 合計金額の小数点は切り捨てです。
 
@@ -25,6 +25,7 @@
 ```
 $ git clone https://github.com/shigenori-tanaka/gasorin-warikan.git
 $ php -S localhost:8000
+$ http://localhost:8000/gasorin-warikan/index.php
 ```
 他に、Herokumを寝かさないために設定時間ごとに自動でサイトを訪れるUptimeRobotというWebサービスを設定しています。
 
